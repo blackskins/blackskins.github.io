@@ -1,0 +1,448 @@
+
+/* 第一屏 B*/
+.sectionA{
+    position: relative;
+    background-color: #041527;
+}
+.sectionA>div>.bg{
+    width:1200px;
+    height:732px;
+    position: absolute;
+    background:url('../images/first_bg.png')no-repeat center;
+    left:50%;
+    margin-left: -600px;
+}
+.sectionA .word1{
+    position: absolute;
+    left:372px;
+    top:100px;
+}
+.sectionA .word2{
+    position: absolute;
+    left:520px;
+    top:290px;
+}
+.sectionA .word3{
+    position: absolute;
+    left:365px;
+    top:420px;
+}
+.sectionA .web{
+    position: absolute;
+    width:214px;
+    height:214px;
+    right:60px;
+    top:100px;
+    /* background-color: #fff; */
+}
+.sectionA .web .zd{
+    position: absolute;
+    width: 214px;
+    height: 214px;
+    background:url('../images/first_web.png')no-repeat;
+    animation:rotate  2s infinite linear;
+}
+.sectionA .web p{
+    position: absolute;
+    padding-left: 60px;
+    padding-top:45px;
+    color:#000;
+    font:normal 700 45px "微软雅黑";
+}
+/*旋转特效*/
+@keyframes rotate{
+    from{}
+    to{
+        transform:rotate(360deg)
+    }
+}
+/* 第一屏 E */
+
+
+/* 第二屏 B */
+.sectionB{
+    background-color: #041527;
+}
+
+.sectionB>div>.title{
+    width:860px;
+    height:140px;
+    margin: 0 auto;
+    background:url('../images/hd_bg.png')no-repeat left bottom;
+}
+.sectionB>div>.title>h1{
+    font-size:60px;
+    font-weight: 900;
+    color: #fff;
+    text-align:center;
+    padding:10px;
+    border-bottom:5px solid #fff;
+}
+
+.sectionB>div>.student{
+    display:flex;
+    justify-content: space-around;
+    color:#fff;
+    margin-top:50px;
+}
+.sectionB>div>.student>li>div{
+    width: 269px;
+    height: 353px;
+    background:url('../images/box1_bg.jpg')no-repeat center;
+}
+.sectionB>div>.student>li>div:hover{
+    cursor: pointer;
+    background:url('../images/box1_bg.gif')no-repeat center;
+}
+.sectionB>div>.student>li>div>h3{
+    font-size: 25px;
+    padding-left: 20px;
+    padding-top: 20px;
+    color:skyblue;
+}
+.sectionB>div>.student>li>div>p{
+    margin:10px;
+    margin-left: 20px;
+    font-size: 18px;
+
+}
+.sectionB>div>.student>li>h3{
+    font-size:20px;
+    margin-top:10px;
+    text-align:center;
+    color:goldenrod;
+    
+}
+.sectionB>div>.student>li>p{
+    text-align:center;
+    font-size: 12px;
+}
+/* 第二屏 E  */
+
+/* 第三屏 B */
+.sectionC{
+    position: relative;
+    background: url('../images/third_bg.jpg')no-repeat;
+    background-size: cover;
+}
+.sectionC>div>.title{
+    width:860px;
+    height:140px;
+    margin: 0 auto;
+    background:url('../images/hd_bg.png')no-repeat left bottom;
+}
+.sectionC>div>.title>h1{
+    font-size:60px;
+    font-weight: 900;
+    color: #fff;
+    text-align:center;
+    padding:10px;
+    border-bottom:5px solid #fff;
+}
+.sectionC>div>.inner{
+    position:absolute;
+    width:874px;
+    height:354px;
+    margin-top:110px;
+    left:50%;
+    margin-left:-437px;
+    background:url('../images/thrid_inner.png')no-repeat;
+}
+.sectionC>div>.inner>.list_con{
+    margin:0 auto;
+    width: 555px;
+    height: 315px;
+    overflow: hidden;
+}
+.sectionC>div>.inner>.list_con>li{
+    margin:0 auto;
+    margin-top:39px;
+    width: 555px;
+    height: 276px;
+    display: none;
+}
+.sectionC>div>.inner>div{
+    position: absolute;
+    width:874px;
+}
+.sectionC>div>.inner>div>a{
+    position: absolute;
+    display: inline-block;
+    padding:20px;
+    background-color: #03effc;
+}
+.sectionC>div>.inner>.l1{
+    top:45px;
+}
+.sectionC>div>.inner>.l2{
+    top:142px;
+}
+.sectionC>div>.inner>.l3{
+    top:238px;
+}
+.sectionC>div>.inner>div>.la{
+    left:-101px;
+}
+.sectionC>div>.inner>div>.ra{
+    right:-101px;
+}
+.sectionC>div>.inner>div>a.active{
+    background-color: yellow;
+}
+/* 第三屏 E */
+
+/* 第四屏 B */
+.sectionD{
+    background-color: #E4EBE9;
+    overflow: hidden;
+}
+.sectionD>div>.title{
+    width:860px;
+    height:140px;
+    margin: 0 auto;
+    background:url('../images/hd_bg01.png')no-repeat left bottom;
+}
+.sectionD>div>.title>h1{
+    font-size:60px;
+    font-weight: 900;
+    color: #009199;
+    text-align:center;
+    padding:10px;
+    border-bottom:5px solid #05B5BF;
+}
+
+/* 手风琴菜单 */
+.sectionD>div>.wind{
+    width: 960px;
+    height: 600px;
+    margin:0 auto;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sectionD>div>.wind>div{
+    position: absolute;
+    border-radius: 20px;
+    display: flex;
+    width:760px;
+    height:100%;
+    left:0px;
+    padding-top: 33.33px;
+    padding-left: 33.33px;
+    transition:all .5s;
+
+}
+.sectionD>div>.wind>div:nth-child(1){
+    background-color: yellow;
+}
+.sectionD>div>.wind>div:nth-child(2){
+    background-color: yellowgreen;
+}
+.sectionD>div>.wind>div:nth-child(3){
+    background-color: green;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+.sectionD>div>.wind>div:nth-child(4){
+    background-color: darkgreen;
+}
+.sectionD>div>.wind>div:nth-child(5){
+    background-color: red;
+}
+.sectionD>div>.wind>div:nth-child(6){
+    background-color: purple;
+}
+.sectionD>div>.wind>div:nth-child(7){
+    background-color: skyblue;
+}
+/* .sectionD>div>.wind>div>img{} */
+.sectionD>div>.wind>div>div{
+    padding:30px 20px 0px;
+    text-align: center;
+}
+/* .sectionD>div>.wind>div>div>h4{}
+.sectionD>div>.wind>div>div>p{} */
+
+/* 第四屏 E */
+
+/* 第五屏 B */
+.sectionE{
+    background:url('../images/fifth_bg.jpg')no-repeat center/cover;
+}
+.sectionE>div>.title{
+    width:860px;
+    height:140px;
+    margin: 0 auto;
+    background:url('../images/hd_bg.png')no-repeat left bottom;
+}
+.sectionE>div>.title>h1{
+    font-size:60px;
+    font-weight: 900;
+    color: #fff;
+    text-align:center;
+    padding:10px;
+    border-bottom:5px solid #fff;
+}
+.sectionE>div>.tit{
+    width: 1090px;
+    margin:20px auto 0;
+    height:64px;
+    background:url('../images/fifth_tit.png')no-repeat;
+}
+.sectionE>div>.table{
+    width: 1090px;
+    margin:0 auto;
+    height:233.33px;
+    background:url('../images/fifth_table.png')no-repeat;
+    /*添加动画*/
+    animation:scroll 10s infinite;
+}
+
+@keyframes scroll{
+    20%{
+        background-position-y: -46.66px;
+    }
+    40%{
+        background-position-y: -93.33px;
+    }
+    60%{
+        background-position-y: -139.99px;
+    }
+    80%{
+        background-position-y: -186.65px;
+    }
+    100%{
+        background-position-y: -233.31px;
+    }
+}
+
+/* 第五屏 E */
+
+.section{
+    overflow:hidden;
+}
+
+
+/* 动画特效 */
+
+/* 第一屏动画 B */
+.sectionA .bg{
+    transform: translateY(100%);
+    transition:all .5s;
+}
+.sectionA .word1{
+    transform: translateX(-200%);
+    transition:all .5s;
+}
+
+.sectionA .word2{
+    transform: translateX(200%);
+    transition:all .5s;
+}
+
+
+.sectionA.animation .bg{
+    transform: none;
+}
+.sectionA.animation .word1{
+    transform: none;
+}
+
+.sectionA.animation .word2{
+    transform: none;
+}
+/* 第一屏动画 E */
+
+/* 第二屏动画 B */
+
+/*默认的样式  */
+.sectionB .title{
+    transform: translateY(-100%);
+    transition: all .5s;
+}
+.sectionB .student li{
+    transform: translateY(200%);
+}
+/* 添加动画 */
+.sectionB.animation .title{
+    transform: none;
+    transition:all .5s;
+}
+.sectionB.animation .student li{
+    transform: none;
+}
+.sectionB.animation .student li:nth-child(1){
+    transition: all .5s .5s;
+}
+.sectionB.animation .student li:nth-child(2){
+    transition: all .5s .7s;
+}
+.sectionB.animation .student li:nth-child(3){
+    transition: all .5s .9s;
+}
+.sectionB.animation .student li:nth-child(4){
+    transition: all .5s 1.1s;
+}
+/* 第二屏动画 E */
+
+/* 第三屏动画 B */
+/* 默认的样式 */
+.sectionC .title{
+    transform:translateY(-100%);
+    opacity: 0;
+}
+.sectionC .inner{
+    transform: translateY(200%);
+    opacity: 0;
+}
+/* 添加动画 */
+.sectionC.animation .title{
+    transform: none;
+    opacity: 1;
+    transition:all .5s;
+}
+.sectionC.animation .inner{
+    transform:none;
+    opacity: 1;
+    transition: all .5s;
+}
+/* 第三屏动画 E */
+
+/* 第四屏动画 B */
+
+/* 默认的样式 */
+.sectionD .title{
+    transform:translateY(-100%);
+    opacity: 0;
+}
+.sectionD .wind{
+    transform: translateY(200%);
+    opacity: 0;
+}
+/* 添加动画 */
+.sectionD.animation .title{
+    transform: none;
+    opacity: 1;
+    transition:all .5s;
+}
+.sectionD.animation .wind{
+    transform:none;
+    opacity: 1;
+    transition: all .5s;
+}
+/* 第四屏动画 E */
+
+/* 第五屏动画 B */
+
+.sectionE .title{
+    transform:translateY(-100%);
+    opacity: 0;
+}
+/* 添加动画 */
+.sectionE.animation .title{
+    transform: none;
+    opacity: 1;
+    transition:all .5s;
+}
+/* 第五屏动画 E */
